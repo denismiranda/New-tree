@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;700&display=swap");
+body {
+  background: linear-gradient(90deg, #9999ff 0%, #9900ff 100%);
+
+  font-family: "Merriweather Sans", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 0;
+  text-decoration: none;
+ color: black;
+ text-align: center;
+}
+
+
+header div{
+  width: 180px;
+  margin: auto;
+  background-color:rgb(0, 0, 0);
+  border-radius: 30%;
+  display: flex;
+  padding: 4px;
+  
+}
+
+ header {
+  padding: 32px ;
+ }
+header img{
+  border-radius: 30%;
+  width: 180px;
+}
+
+section figure{
+  margin-top: 20px;
+  background-color: rgb(83, 76, 87);
+  padding: 25px;
+  border-radius: 30px;
+  text-align: center;
+
+}
+
+
+main{
+  max-width: 580px;
+  width: 70%;
+  margin: auto;
+  margin-top: 24px;
+  gap: 24px;
+}
+
+
+
+/* Transition */
+section figure:hover {
+  transform: scale(1.1);
+}
+
+section figure{
+  transition: transform 0.4s;
+}
+
+section li{
+  flex-wrap: wrap;
+  
+
+}
+
+header div:hover {
+  transform: scale(1.1)
+}
+
+header div{
+  transition: transform 0.3s;
+}
+
+/* Animation */
+
+@keyframes fromTop{
+  from{
+      opacity: 0;
+      transform: translateY(-30px);    
+  }
+
+  to{
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fromBottom{
+  from{
+      opacity: 0;
+      transform: translateY(30px)
+  }
+  
+  to{
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+header div{
+  animation: fromTop .7s .1s backwards ;
+}
+
+main section{
+  animation: fromBottom .7s   backwards;
+}
+
+main section:nth-child(1){
+  animation-delay: .1;
+}
+
+main section:nth-child(2){
+  animation-delay: .2s;
+}
+
+main section:nth-child(3){
+  animation-delay: .3s;
+}
+
+main section:nth-child(4){
+  animation-delay: .4s ;
+}
+

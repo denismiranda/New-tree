@@ -10,8 +10,9 @@ body {
   list-style: none;
   border: 0;
   text-decoration: none;
- color: black;
- text-align: center;
+  color: black;
+  text-align: center;
+  height: 600;
 }
 
 
@@ -22,6 +23,7 @@ header div{
   border-radius: 30%;
   display: flex;
   padding: 4px;
+  height: 600;
   
 }
 
